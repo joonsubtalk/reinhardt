@@ -1,0 +1,20 @@
+{
+  "name": "reinhardt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "del-cli --force /out && next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.5.2",
+    "normalize.css": "^8.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "sass": "^1.26.10"
+  }
+}
