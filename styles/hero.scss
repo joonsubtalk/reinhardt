@@ -1,0 +1,54 @@
+.hero {
+    font-size: 1rem;
+    color: #fff0d5;
+    font-family: 'Oswald', sans-serif;
+    &__container {
+        padding-top: 0;
+        display: flex;
+        justify-content: space-between;
+        min-height: 900px;
+        height: 100vh;
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+    &__wrapper {
+        position: relative;
+        flex: 1 0 50%;
+    }
+    &__description {
+        flex: 1 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__header {
+        margin-bottom: 5em;
+    }
+    &__location {
+        font-size: 1.5em;
+        font-weight: 500;
+        opacity: .5;
+        margin: 0;
+    }
+    &__title {
+        font-size: 7.5em;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        font-weight: 500;
+        margin: 0;
+    }
+    &__subtitle {
+        font-size: 1.5em;
+        opacity: .25;
+        margin: 0;
+    }
+    &__author {
+        font-size: 1em;
+        opacity: .5;
+        text-align: right;
+    }
+}
