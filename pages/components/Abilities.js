@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const Ability = () => {
     return (<div className="ability">
-        <div class="ability__container">
+        <div className="ability__container">
             I am Ability;
         </div>
     </div>)

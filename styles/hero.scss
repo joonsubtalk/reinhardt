@@ -2,6 +2,8 @@
     font-size: 1rem;
     color: #fff0d5;
     font-family: 'Oswald', sans-serif;
+    position: relative;
+
     &__container {
         padding-top: 0;
         display: flex;
@@ -51,4 +53,14 @@
         opacity: .5;
         text-align: right;
     }
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+.js-particles {
+    position: absolute;
+    top: 0;
 }
