@@ -1,5 +1,5 @@
 {
-  "name": "reinhardt",
+  "name": "inktober",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "embla-carousel": "^4.0.4",
     "next": "9.5.2",
     "normalize.css": "^8.0.1",
     "react": "16.13.1",

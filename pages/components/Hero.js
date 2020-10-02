@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useRef } from 'react';
 import Particles from 'react-particles-js';
 
 
@@ -12,7 +12,7 @@ const particleParam = {
         }
     },
     "color": {
-        "value": ["#9b7c5b","#f0e6cf","#402b1a","#d6be8d"]
+        "value": ["#383838","#f0e6cf","#f60000","#565656"]
     },
     "shape": {
         "type": "circle",
@@ -23,11 +23,6 @@ const particleParam = {
         "polygon": {
             "nb_sides": 3
         },
-        "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-        }
     },
     "opacity": {
         "value": 0.25,
@@ -115,22 +110,32 @@ const particleParam = {
 
 function Hero() {
 
+    const videoRef = useRef();
+
+    useEffect(() => {
+        setTimeout(()=>{
+            videoRef.current.play()
+        },1000)
+    }, []);
+
     return (
         <section className="hero section--flush-top">
             <div className="container hero__container">
                 <div className="hero__wrapper">
-                    <picture>
-                        <source className="hero__image" srcSet="img/rein.webp" type="image/webp"/>
-                        <source className="hero__image" srcSet="/img/rein.jpg" type="image/jpeg"/> 
-                        <img className="hero__image" src="/img/rein.jpg" alt="@maxgrecke"/>
-                    </picture>
+                    <video
+                        ref={videoRef}
+                        className="hero__video"
+                        loop
+                        muted>
+                        <source src={'/img/inktoberhero.mp4'} />
+                    </video>
                 </div>
                 <div className="hero__description">
                     <header className="hero__header">
-                        <h2 className="hero__subtitle">JUSTICE WILL BE DONE</h2>
-                        <h1 className="hero__title">Reinhardt</h1>
+                        <h2 className="hero__subtitle">31 Days. 31 Drawings.</h2>
+                        <h1 className="hero__title">inktober</h1>
                     </header>
-                    <div className="hero__author">IG @maxgrecke</div>
+                    <div className="hero__author">Joon-Sub Chung | October 1, 2020</div>
                 </div>
             </div>
             <Particles canvasClassName="js-particles" params={particleParam}/>

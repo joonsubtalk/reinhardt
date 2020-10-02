@@ -1,0 +1,40 @@
+.giveaway {
+    font-size: 1rem;
+    &__container {
+        min-height: 50vh;
+    }
+    &__card {
+        background-color: #fff;
+        padding: 4em 2em;;
+        text-align: center;
+    }
+    &__header {
+        font-size: 2em;
+        margin-top: 0;
+    }
+    p {
+        margin: 0 auto;
+        width: 50%;
+        line-height: 1.6;;
+        margin-bottom: 1em;
+    }
+    &__id {
+        text-decoration: underline;
+    }
+}
+.giveaway-- {
+    .giveaway { // NAMESPACE
+
+    }
+}
+
+footer {
+
+    .app__subheader {
+        color: #fff;
+    }
+    text-align: center;;
+    padding: 3em 0;
+    color: #ccc;
+    background-color: #354c45;
+}
